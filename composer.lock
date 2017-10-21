@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8f2120fa77d42a42b4210cdbe1c114e2",
+    "content-hash": "88087edbfe028d0be779b73a7a1c2de8",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -402,6 +402,48 @@
                 }
             ],
             "time": "2015-04-20T18:58:01+00:00"
+        },
+        {
+            "name": "laravel-frontend-presets/bulma",
+            "version": "v1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel-frontend-presets/bulma.git",
+                "reference": "2b859919a546d8333a3f71e2e6972e29c8138802"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel-frontend-presets/bulma/zipball/2b859919a546d8333a3f71e2e6972e29c8138802",
+                "reference": "2b859919a546d8333a3f71e2e6972e29c8138802",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": "5.5.*"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "LaravelFrontendPresets\\BulmaPreset\\BulmaPresetServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LaravelFrontendPresets\\BulmaPreset\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Laravel 5.5.x Front-end preset for Bulma",
+            "keywords": [
+                "bulma",
+                "laravel",
+                "preset"
+            ],
+            "time": "2017-10-15T16:06:22+00:00"
         },
         {
             "name": "laravel/framework",

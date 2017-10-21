@@ -1,0 +1,38 @@
+html, body {
+  height:100%;
+}
+body {
+  /*font-family: 'Indie Flower', cursive;*/
+  /*font-family: 'Quicksand', sans-serif;*/
+  font-family: 'Courgette', cursive;
+}
+
+.bg-parallax {
+  background-image: url("/images/invitation/3.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+.bg-detail {
+  background-image: url("/images/invitation/detail_img.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.is-colored {
+  color: #684A4A;
+}
+.bg-transparent {
+  background-color: transparent;
+}
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.5em;
+}
