@@ -1,67 +1,71 @@
 @extends('layouts.app_materialize')
 
 @section('content')
-<div class="d-flex h-100 bg-parallax" id="home">
-  <div class="justify-content-center" style="margin: auto">
-    <div class="row ">
-     <div class="col-xs-12">
-       <h1 class="display-4 is-colored">Dani & Maya</h1>
-     </div>
-    </div>
-    <div class="row ">
-     <div class="col-xs-12">
-       <h1 class="display-6 is-colored">Nov 25th, 2017</h1>
-     </div>
-    </div>
-  </div>
-</div>
-<div class="d-flex h-75 bg-detail" id="detail">
-  <div class="container justify-content-center" style="margin: auto; color: #fff;">
-    {{-- <div class="row d-none d-sm-block">
-      <div style="height: 100px;"></div>
-    </div> --}}
-    <div class="row">
-      <div class="col-md-4">
-        <h1 class="display-3 mt-5">Our day</h1>
+<section class="h-100 bg-parallax" id="home">
+  <header class="container h-100">
+    <div class="d-flex align-items-center justify-content-center h-100">
+      <div class="d-flex flex-column">
+        <div class="text align-self-center p-2 is-colored text-heading-1">Dani & Maya</div>
+        <div class="text align-self-center p-2 is-colored text-heading-2">Nov 25th, 2017</div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-md-4 offset-md-4">
-        <div class="row">
-          <div class="col-3">
-            <img src="{{asset('images/invitation/clock2.png')}}" class="img-fluid float-left" alt="">
-          </div>
-          <div class="col mt-3">
-            <h1>When</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-9 offset-3">
-            <p class="h2">Saturday <br> November 25th, <br> 2017 <br> 3:00 O'clock</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="row">
-          <div class="col-3">
-            <img src="{{asset('images/invitation/marker.png')}}" class="img-fluid float-left" alt="">
-          </div>
-          <div class="col mt-3">
-            <h1>Where</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-9 offset-3">
-            <p class="h4">Jl. Pluto Utara IV, no 10 <br> Margahayu Raya <br>Bandung <br> 40286</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  </header>
+</section>
 
-<section id="map" style="height: 30vh;">
-  <div class="row" id="map"></div>
+<section class="h-100 bg-detail" id="detail">
+  <div class="container h-100">
+    <div class="d-flex align-items-center justify-content-center h-100">
+      <div class="d-flex flex-column" style="color: #fff;">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="text-heading-1">Our day</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 offset-md-4">
+            <div class="row">
+              <div class="col-3">
+                <img src="{{asset('images/invitation/clock2.png')}}" class="img-fluid float-left mt-1" alt="">
+              </div>
+              <div class="col">
+                <div class="text-heading-2">When</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9 offset-3">
+                <div class="text-heading-3">Saturday <br> November 25th, <br> 2017 <br> 3:00 O'clock</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <div class="col-3">
+                <a href="https://www.google.com/maps/place/6%C2%B057'21.5%22S+107%C2%B039'51.4%22E/@-6.9559677,107.6620976,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-6.9559677!4d107.6642863?hl=en" target="_blank">
+                  <img src="{{asset('images/invitation/marker.png')}}" class="img-fluid float-left ml-1 mt-2" alt="" width="80%">
+                </a>
+              </div>
+              <div class="col">
+                <div class="text-heading-2">Where</div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-9 offset-3">
+                <div class="text-heading-3">
+                  Jl. Pluto Utara IV, no 10 <br> Margahayu Raya <br>Bandung <br> 40286
+                </div>
+                <div class="text-heading-4">
+                  <a href="https://www.google.com/maps/place/6%C2%B057'21.5%22S+107%C2%B039'51.4%22E/@-6.9559677,107.6620976,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d-6.9559677!4d107.6642863?hl=en" target="_blank">See on Google Map</a>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="map" style="height: 50vh;">
+  <div class="row" id="map" style="width: 100%;"></div>
 </section>
 <section id="photos">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -73,16 +77,23 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
+      <img class="d-block w-100" src="{{asset('images/invitation/1.jpg')}}" alt="First slide" height="100%">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('images/invitation/2.jpg')}}" alt="First slide" height="100%">
+    </div>
+    <div class="carousel-item">
       <img class="d-block w-100" src="{{asset('images/invitation/3.jpg')}}" alt="First slide" height="100%">
     </div>
-    @for ($i = 1; $i < 7; $i++)
-      @php
-        $photo = 'images/invitation/'.$i.'.jpg';
-      @endphp
-      <div class="carousel-item">
-        <img class="d-block w-100" src="{{asset($photo)}}" alt="">
-      </div>
-    @endfor
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('images/invitation/4.jpg')}}" alt="First slide" height="100%">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('images/invitation/6.jpg')}}" alt="First slide" height="100%">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{{asset('images/invitation/7.jpg')}}" alt="First slide" height="100%">
+    </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -98,7 +109,7 @@
 @section('scripts')
   <script>
     function initMap() {
-      var uluru = {lat: -6.9559758, lng: 107.6620611};
+      var uluru = {lat: -6.9559677, lng: 107.6620976};
       var map = new google.maps.Map(document.getElementById('map'), {
         zoom: 15,
         center: uluru

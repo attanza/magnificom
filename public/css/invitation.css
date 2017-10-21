@@ -8,7 +8,7 @@ body {
 }
 
 .bg-parallax {
-  background-image: url("/images/invitation/3.jpg");
+  background-image: url("/images/invitation/5.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -35,4 +35,19 @@ body {
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
     font-size: 1.5em;
+}
+.text-heading-1 {
+  font-size: 8vh;
+}
+
+.text-heading-2 {
+  font-size: 6vh;
+}
+
+.text-heading-3 {
+  font-size: 3vh;
+}
+
+.text-heading-4 {
+  font-size: 2vh;
 }

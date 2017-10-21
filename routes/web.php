@@ -4,7 +4,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dani-maya-weding-invitation', function () {
+Route::get('/dani-maya-wedding-invitation', function () {
     return view('invitation');
 });
 
