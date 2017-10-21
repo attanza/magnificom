@@ -18,12 +18,10 @@ VueScrollTo.setDefaults({
     y: true
 })
 
-import BackToTop from 'vue-backtotop'
-Vue.use(BackToTop)
-
 Vue.component('wedding-location', require('./components/WeddingLocation.vue'))
 Vue.component('my-carousel', require('./components/MyCarousel.vue'))
 Vue.component('vue-menu', require('./components/VueMenu.vue'))
+Vue.component('back-top', require('./components/BackTop.vue'))
 
 import * as VueGoogleMaps from 'vue2-google-maps'
 Vue.use(VueGoogleMaps, {
