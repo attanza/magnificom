@@ -1,0 +1,42 @@
+body {
+  font-family: 'Courgette', cursive;
+}
+a {
+  color: #FFDD57;
+}
+a:hover {
+  color: #FFDD57;
+  text-decoration: underline;
+}
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-item,
+.navbar-link {
+  color: #00D1B2;
+}
+
+a.navbar-item:hover,
+a.navbar-item.is-active,
+.navbar-link:hover,
+.navbar-link.is-active {
+  background-color: transparent;
+  color: #00D1B2;
+  border-bottom: 3px solid #00D1B2;
+}
+
+.navbar-brand {
+  .button {
+    background-color: transparent;
+  }
+  .button:active, .button.is-active {
+      border-color: #00D1B2;
+      color: #00D1B2;
+  }
+}
+.navbar-burger span {
+    background-color: #00D1B2;
+    display: block;
+    height: 3px;
+}
