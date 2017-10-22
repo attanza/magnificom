@@ -1683,15 +1683,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
       }, {
         src: '/images/invitation/2.jpg'
       }, {
-        src: '/images/invitation/3.jpg'
-      }, {
         src: '/images/invitation/4.jpg'
       }, {
         src: '/images/invitation/5.jpg'
-      }, {
-        src: '/images/invitation/6.jpg'
-      }, {
-        src: '/images/invitation/7.jpg'
       }]
     };
   }

@@ -30,7 +30,7 @@
               <img src="{{asset('images/invitation/clock2.png')}}">
             </figure>
             <p>
-              Saturday <br> November, 25th <br> 2017 <br> 3:00 O'clock
+              Saturday <br> November, 25th <br> 2017 <br> 3:00 pm
             </p>
           </div>
         </div>
