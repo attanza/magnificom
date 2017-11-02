@@ -22,6 +22,7 @@ Vue.component('wedding-location', require('./components/WeddingLocation.vue'))
 Vue.component('my-carousel', require('./components/MyCarousel.vue'))
 Vue.component('vue-menu', require('./components/VueMenu.vue'))
 Vue.component('back-top', require('./components/BackTop.vue'))
+Vue.component('hero-image', require('./components/HeroImage.vue'))
 
 import * as VueGoogleMaps from 'vue2-google-maps'
 Vue.use(VueGoogleMaps, {

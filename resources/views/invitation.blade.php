@@ -1,7 +1,7 @@
 @extends('layouts.app_materialize')
 
 @section('content')
-<section class="hero is-fullheight bg-parallax" id="home">
+{{-- <section class="hero is-fullheight bg-parallax" id="home">
   <div class="hero-body">
     <div class="container">
       <h1 class="title has-text-centered is-colored is-size-1-desktop is-size-1-tablet is-size-3-mobile">
@@ -12,7 +12,8 @@
       </h2>
     </div>
   </div>
-</section>
+</section> --}}
+<hero-image></hero-image>
 <section class="hero is-fullheight bg-detail" id="detail">
   <div class="hero-body">
     <div class="container">
