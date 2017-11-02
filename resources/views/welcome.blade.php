@@ -8,24 +8,18 @@
 <title>Magnificom-id.com</title>
 <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-<style type="text/css">
-.mag-bg {
-  background-image: url("/images/mag_bg.jpeg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-}
-</style>
+<link rel="stylesheet" type="text/css" href="{{asset('css/landing.css')}}">
 </head>
 <body>
-<section class="hero is-success is-fullheight mag-bg">
+<section class="hero is-fullheight">
   <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
+    <div class="container has-text-centered">
+      <h1 class="title is-size-1">
         MAGNIFICOM
       </h1>
+      <h2 class="subtitle">
+       Let the idea be MAGNIFICENT
+      </h2>
     </div>
   </div>
 </section>
