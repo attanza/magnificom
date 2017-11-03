@@ -8,10 +8,14 @@ Route::get('/dani-maya-wedding-invitation', function () {
     return view('invitation');
 });
 
-Auth::routes();
+Route::get('/portfolio', function () {
+    return view('portfolio.portfolio');
+});
 
-Route::get('/home', 'HomeController@index')->name('home');
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
+// Auth::routes();
+
+// Route::get('/home', 'HomeController@index')->name('home');
 
