@@ -1,4 +1,105 @@
 body {
   margin: 0px;
+  padding-top: 0px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+}
+.navbar { 
+  position: fixed !important; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  z-index: 1;
+  min-height: 4rem;
+}
+.bg-home {
+  background-image: url("../../images/portfolio/bg_home.jpg");
+  height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-knowledge {
+  background-image: url("../../images/portfolio/bg_knowledge.jpg");
+  min-height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-experience {
+  background-image: url("../../images/portfolio/bg_experience.jpg");
+  min-height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-work {
+  background-image: url("../../images/portfolio/bg_latest_work.jpg");
+  min-height: 100vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-contact {
+  background-image: url("../../images/portfolio/bg_contact.jpg");
+  min-height: 80vh; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.navbar.is-warning {
+    background-color: #616161;
+    color: #fff;
+}
+.navbar.is-warning .navbar-brand > .navbar-item,
+.navbar.is-warning .navbar-brand .navbar-link {
+  color: #fff;
+}
+
+.navbar.is-warning .navbar-end .navbar-link, .navbar.is-warning .navbar-end>.navbar-item, .navbar.is-warning .navbar-start .navbar-link, .navbar.is-warning .navbar-start>.navbar-item {
+    color: #fff;
+}
+
+.navbar.is-warning .navbar-end .navbar-link.is-active, .navbar.is-warning .navbar-end .navbar-link:hover, .navbar.is-warning .navbar-end>a.navbar-item.is-active, .navbar.is-warning .navbar-end>a.navbar-item:hover, .navbar.is-warning .navbar-start .navbar-link.is-active, .navbar.is-warning .navbar-start .navbar-link:hover, .navbar.is-warning .navbar-start>a.navbar-item.is-active, .navbar.is-warning .navbar-start>a.navbar-item:hover {
+    background-color: transparent;
+    color: #ffde57;
+    border-bottom: 2px solid #ffde57;
+}
+
+.navbar.is-warning .navbar-brand > a.navbar-item:hover, .navbar.is-warning .navbar-brand > a.navbar-item.is-active,
+.navbar.is-warning .navbar-brand .navbar-link:hover,
+.navbar.is-warning .navbar-brand .navbar-link.is-active {
+  background-color: transparent;
+}
+
+.column-spacer {
+  height: 50px;
+}
+.footer {
+    background-color: #616161;
+    padding: 3rem 1.5rem;
+}
+.footer a {
+    color: #FFDE57;
+    cursor: pointer;
+    text-decoration: none;
+}
+.footer a:hover {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+.box.contact {
+  background-color: #31221B;
+  opacity: 0.85;
+  color: #fff;
+}
+.label {
+  color: #fff;
 }
