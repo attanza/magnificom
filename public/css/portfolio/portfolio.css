@@ -103,3 +103,52 @@ body {
 .label {
   color: #fff;
 }
+.stepper-container{
+  background-color: #ccc;
+  padding: 1rem;
+  margin-bottom: 2em;
+  border-radius: 5em;
+}
+.stepper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.step{
+  display:flex;
+  flex-direction: row;
+  align-items:baseline;
+  width:100%;
+}
+.stepper-container.vertical{
+  flex-direction: column;
+}
+.experience-stepper {
+
+}
+.stepper-wrapper{
+
+}
+.stepper-node {
+  width: 30px;
+  height: 30px;
+  background-color: #ffde57;
+  border-radius: 50%;
+  margin: 0 auto;
+  
+}
+.stepper-line {
+  width: 10px;
+  height: 10px;
+  background-color: #ffde57;
+  min-height: 190px;
+  margin: -8px auto;
+}
+.card-content {
+  background-color: #616161;
+  opacity: 0.85;
+  color: #fff;
+}
+.card-footer {
+  background-color: #ffde57
+}

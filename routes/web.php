@@ -9,7 +9,7 @@ Route::get('/dani-maya-wedding-invitation', function () {
 });
 
 Route::get('/portfolio', function () {
-    return view('portfolio.portfolio');
+    return view('portfolio.bootstrap.portfolio_master');
 });
 
 // Auth::routes();

@@ -119,11 +119,11 @@
         </div>
       </div>
       <div class="level-right">
-        <p class="level-item">70%</p>
+        <p class="level-item">80%</p>
       </div>
     </div>
     <div class="animated fadeInRight" style="margin-top: -20px;">
-      <progress class="progress is-primary" value="70" max="100">70%</progress>
+      <progress class="progress is-primary" value="80" max="100">80%</progress>
     </div>
   </div>
 

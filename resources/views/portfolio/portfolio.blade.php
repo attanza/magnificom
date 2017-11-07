@@ -36,21 +36,21 @@
 <section class="section bg-experience" id="experience">
   <div class="column-spacer is-hidden-mobile"></div>
   <div class="container">
-    <div class="columns">
-      <div class="column is-half is-offset-one-quarter" style="text-align: center;">
-        <h1 class="is-size-3-desktop is-size-6-mobile has-text-warning">MY WORK EXPERIENCE</h1>
-      </div>
-    </div>
+    <h1 class="is-size-3-desktop is-size-5-mobile has-text-warning has-text-centered animated zoomInUp">MY WORK EXPERIENCE</h1>
+    @include('portfolio.experience')
+    @include('portfolio.experience_mobile')
   </div>
 </section>
 <section class="section bg-work" id="work">
   <div class="column-spacer is-hidden-mobile"></div>
   <div class="container">
     <div class="columns">
-      <div class="column is-half is-offset-one-quarter" style="text-align: center;">
-        <h1 class="is-size-3-desktop is-size-6-mobile has-text-warning">MY LATEST WORK</h1>
+      <div class="column is-half is-offset-one-quarter">
+        <h1 class="is-size-3-desktop is-size-5-mobile has-text-warning has-text-centered">MY LATEST WORK</h1>
       </div>
     </div>
+    @include('portfolio.work')
+
   </div>
 </section>
 <section class="section bg-contact" id="contact">
