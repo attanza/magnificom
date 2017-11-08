@@ -8,9 +8,7 @@ Route::get('/dani-maya-wedding-invitation', function () {
     return view('invitation');
 });
 
-Route::get('/portfolio', function () {
-    return view('portfolio.bootstrap.portfolio_master');
-});
+Route::get('/portfolio', 'Portfolio\PortfolioController@index')->name('portfolio.index');
 
 // Auth::routes();
 

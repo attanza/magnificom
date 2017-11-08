@@ -24,8 +24,9 @@ body {
 }
 #knowledge {
 	padding-top: 10vh;
+  padding-bottom: 10vh;
   background-image: url("../../images/portfolio/bg_knowledge.jpg");
-  height: 100vh; 
+  min-height: 100vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,13 +51,19 @@ body {
   background-size: cover;
 }
 #contact {
-	padding-top: 5vh;
+	padding-top: 10vh;
   background-image: url("../../images/portfolio/bg_contact.jpg");
   height: 80vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.progress-lg {
+  height: 1.5rem;
+}
+.progress-sm {
+  height: 1rem;
 }
 footer {
   padding: 2rem;
