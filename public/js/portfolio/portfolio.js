@@ -11,24 +11,24 @@ $(document).ready(function(){
     }
   });
 });
-window.sr = ScrollReveal();
+window.sr = ScrollReveal({ reset: true });
 sr.reveal('.home-showcase', {
   duration: 2000,
   origin: 'left',
   distance: '300px'
 });
 sr.reveal('.knowledge-name', {
-  duration: 2000,
+  duration: 1500,
   origin: 'left',
-  distance: '300px'
+  distance: '100px'
 });
 sr.reveal('.knowledge-progress', {
-  duration: 2000,
+  duration: 1500,
   origin: 'bottom',
-  distance: '300px'
+  distance: '100px'
 });
 sr.reveal('.knowledge-skore', {
-  duration: 2000,
+  duration: 1500,
   origin: 'right',
-  distance: '300px'
+  distance: '100px'
 })
