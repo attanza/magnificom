@@ -1,5 +1,5 @@
 <section id="knowledge">
-  <div class="container d-none d-xl-block d-lg-block d-md-block">
+  <div class="container d-none d-xl-block d-lg-block d-md-block py-4">
     <h3 class="text-warning text-center mb-3">MY KNOWLEDGE IN SOFTWARES</h3>
     @foreach ($knowledges as $know)
       <div class="row py-2">
