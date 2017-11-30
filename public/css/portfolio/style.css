@@ -1,7 +1,9 @@
+html, body {
+  height:100%;
+}
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #fff;
-  min-height: 100vh;
 	background-color: #343A40;
 }
 .navbar{
@@ -15,8 +17,9 @@ body {
     color: #FFC107;
 }
 #home {
+  padding-top: 10vh;
   background-image: url("../../images/portfolio/bg_home.jpg");
-  height: 100vh; 
+  min-height: 100vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +50,7 @@ body {
 #work {
 	padding-top: 10vh;
   background-image: url("../../images/portfolio/bg_latest_work.jpg");
-  height: 100vh; 
+  min-height: 100vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -57,7 +60,7 @@ body {
 #contact {
 	padding-top: 10vh;
   background-image: url("../../images/portfolio/bg_contact.jpg");
-  height: 80vh; 
+  min-height: 80vh; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -90,4 +93,26 @@ footer {
   margin-right: auto;
   margin-left: auto;
 
+}
+.line-sm{
+  width: 10px;
+  height: 100%;
+  background-color: #FFC107;
+  border-radius: 5px;
+  margin-top: -10px;
+  margin-right: auto;
+  margin-left: 11px;
+}
+@media only screen and (min-width: 768px) {
+  .mt-3-desktop {
+    margin-top: 3rem;
+  }
+}
+.card-image {
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

@@ -23,15 +23,15 @@
     <h5 class="text-warning text-center mb-3">MY KNOWLEDGE IN SOFTWARES</h5>
     @foreach ($knowledges as $know)
       <div class="row">
-        <div class="col-sm-6 knowledge-name">
+        <div class="col-6 knowledge-name">
           <h6>{{$know['name']}}</h6>
         </div>
-        <div class="col-sm-6 knowledge-skore">
+        <div class="col-6 knowledge-skore">
           <h6 class="text-right">{{$know['skore']}}%</h6>
         </div>
       </div>
       <div class="row mb-3">
-        <div class="col-sm-12 knowledge-progress">
+        <div class="col-12 knowledge-progress">
           <div class="progress progress-sm mb-1">
             <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: {{$know['skore']}}%" aria-valuenow="{{$know['skore']}}" aria-valuemin="0" aria-valuemax="100">
               <span>{{$know['skore']}}%</span>

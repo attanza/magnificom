@@ -24,15 +24,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       </h2>
     </div>
   </div>
-  {{-- <div class="hero-foot">
-    <nav class="tabs is-boxed is-fullwidth">
-      <div class="container">
-        <ul>
-          <li><a href="{{url('/portfolio')}}">My Portfolio</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div> --}}
 </section>
 </body>
 </html>
