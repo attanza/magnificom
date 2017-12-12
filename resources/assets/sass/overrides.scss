@@ -40,3 +40,8 @@ a.navbar-item.is-active,
     display: block;
     height: 3px;
 }
+.menu-list a.is-active {
+    background-color: #00D1B2;
+    color: #fff;
+    font-weight: bold;
+}

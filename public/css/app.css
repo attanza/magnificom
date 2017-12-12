@@ -13888,6 +13888,12 @@ a.navbar-item.is-active,
   height: 3px;
 }
 
+.menu-list a.is-active {
+  background-color: #00D1B2;
+  color: #fff;
+  font-weight: bold;
+}
+
 .m-t-5 {
   margin-top: 5px !important;
 }
@@ -14298,5 +14304,17 @@ a.navbar-item.is-active,
   right: 0;
   left: 0;
   z-index: 1030;
+}
+
+.sidebar-wrapper {
+  padding: 20px;
+  background-color: #fff;
+  color: #000;
+  min-height: 90vh;
+}
+
+.content-wrapper {
+  padding-top: 20px;
+  padding-right: 20px;
 }
 
