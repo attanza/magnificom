@@ -13,3 +13,7 @@ Route::group(['namespace' => '\Api\Auth'], function(){
     Route::post('refresh', 'LoginController@refresh');
     Route::post('activate', 'ActivationController@activate');
 });
+
+Route::group(['middleware' => ['auth:api', 'admin']], function () {
+	Route::get('/user/{email}', 'Manage\UserController@getUserByEmail');
+});

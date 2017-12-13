@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use App\Models\Role;
 use App\Http\Requests\User\StoreUser;
+use App\Http\Resources\User\UserR;
 use Image;
 use Storage;
 use QrCode;
@@ -142,5 +143,15 @@ class UserController extends Controller
     {
         $roles = Role::select('id', 'name')->orderBy('name')->get();
         return $roles;
+    }
+
+    public function getUserByEmail($email)
+    {
+        $user = User::where('email', $email)->first();
+        if (count($user) == 0) {
+            return response()->json(['msg' => 'User not found'], 422);
+        } else {
+            return new UserR($user);
+        }
     }
 }
