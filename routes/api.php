@@ -1,9 +1,10 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Http\Resources\User\UserR;
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
-    return $request->user();
+    return new UserR($request->user());
 });
 
 Route::group(['namespace' => '\Api\Auth'], function(){

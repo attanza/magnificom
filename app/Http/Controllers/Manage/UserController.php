@@ -21,7 +21,7 @@ class UserController extends Controller
     public function index()
     {
         $users = User::with('roles')->get();
-    	return view('manage.users.index')->withUsers($users);
+        return view('manage.users.index')->withUsers($users);
     }
 
     /**
@@ -43,21 +43,21 @@ class UserController extends Controller
     public function store(StoreUser $request)
     {
         $user = User::create([
-        	'name'=> $request->name,
-        	'email'=> $request->email,
-        	'phone'=> $request->phone,
-        	'password' => bcrypt(str_random(8))
+            'name'=> $request->name,
+            'email'=> $request->email,
+            'phone'=> $request->phone,
+            'password' => bcrypt(str_random(8))
         ]);
         if ($request->has('is_active')) {
-        	$user->is_active = 1;
+            $user->is_active = 1;
         } else {
-        	$user->is_active = 0;
+            $user->is_active = 0;
         }
         $user->save();
         $user->roles()->attach($request->role_id);
-        if ($request->hasFile('photo')){
-        	$photo = $request->file('photo');
-        	$this->savePhoto($user, $photo);
+        if ($request->hasFile('photo')) {
+            $photo = $request->file('photo');
+            $this->savePhoto($user, $photo);
         }
         return redirect()->route('users.index');
     }
@@ -84,7 +84,7 @@ class UserController extends Controller
     {
         $user = User::findOrFail($id);
         return view('manage.users.edit')->withUser($user)
-        	->withRoles($this->getRoles());
+            ->withRoles($this->getRoles());
     }
 
     /**
@@ -96,22 +96,22 @@ class UserController extends Controller
      */
     public function update(Request $request, $id)
     {
-    	$user = User::findOrFail($id);
+        $user = User::findOrFail($id);
         $user->update([
-        	'name'=> $request->name,
-        	'email'=> $request->email,
-        	'phone'=> $request->phone,
+            'name'=> $request->name,
+            'email'=> $request->email,
+            'phone'=> $request->phone,
         ]);
         if ($request->has('is_active')) {
-        	$user->is_active = 1;
+            $user->is_active = 1;
         } else {
-        	$user->is_active = 0;
+            $user->is_active = 0;
         }
         $user->save();
         $user->roles()->sync($request->role_id);
-        if ($request->hasFile('photo')){
-        	$photo = $request->file('photo');
-        	$this->savePhoto($user, $photo);
+        if ($request->hasFile('photo')) {
+            $photo = $request->file('photo');
+            $this->savePhoto($user, $photo);
         }
         return redirect()->route('users.show', $id);
     }
@@ -140,7 +140,7 @@ class UserController extends Controller
 
     private function getRoles()
     {
-    	$roles = Role::select('id', 'name')->orderBy('name')->get();
-    	return $roles;
+        $roles = Role::select('id', 'name')->orderBy('name')->get();
+        return $roles;
     }
 }

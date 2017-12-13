@@ -54,4 +54,9 @@ class User extends Authenticatable
             return asset(Storage::url($value));
         }
     }
+
+    public function gamePoint()
+    {
+        return $this->hasOne('App\Models\GamePoint');
+    }
 }

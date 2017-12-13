@@ -26,6 +26,5 @@ class AdminMiddleware
         } else {
             return response('/login')->withError('Request not allowed');
         }
-        
     }
 }
