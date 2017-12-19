@@ -69,7 +69,6 @@
 			</div>
 			<footer class="card-footer">
 				<a href="{{ route('users.edit', $user->id) }}" class="card-footer-item">Edit</a>
-				<a href="#" class="card-footer-item">Generate QR Code</a>
 			</footer>
 		</div>
 	</div>

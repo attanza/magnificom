@@ -21,10 +21,10 @@ class AdminMiddleware
             if ($role === 'administrator') {
                 return $next($request);
             } else {
-                return response('/login')->withError('Request not allowed');
+                return redirect('/login');
             }
         } else {
-            return response('/login')->withError('Request not allowed');
+            return redirect('/login');
         }
     }
 }

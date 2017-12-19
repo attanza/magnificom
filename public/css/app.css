@@ -14314,7 +14314,6 @@ a.navbar-item.is-active,
 }
 
 .content-wrapper {
-  padding-top: 20px;
-  padding-right: 20px;
+  padding: 20px;
 }
 
