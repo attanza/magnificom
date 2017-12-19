@@ -4,6 +4,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/home', function () {
+    return view('welcome');
+});
 Route::get('/dani-maya-wedding-invitation', function () {
     return view('welcome');
 });
@@ -27,6 +30,7 @@ Route::group(['middleware' => 'guest'], function () {
 // Manage
 // -----------------------------------
 Route::group(['middleware' => 'admin', 'prefix' => 'manage', 'namespace' => 'Manage'], function(){
+	Route::get('/', 'DashboardController@index')->name('dashboard.index');
 	Route::get('dashboard', 'DashboardController@index')->name('dashboard.index');
 	Route::resource('users', 'UserController')->except(['destroy']);
 });
