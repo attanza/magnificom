@@ -64,7 +64,10 @@
             <option value="" disabled selected>Select user role ...</option>
             @foreach ($roles as $role)
               <option value="{{$role->id}}"
-                  @if($user->roles()->first()->id == $role->id) selected @endif>
+                @if ($user->roles()->first() && $user->roles()->first()->id == $role->id)
+                  selected
+                @endif
+                >
                   {{$role->name}}
               </option>
             @endforeach

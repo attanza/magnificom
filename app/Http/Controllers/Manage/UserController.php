@@ -11,6 +11,7 @@ use App\Http\Resources\User\UserR;
 use Image;
 use Storage;
 use QrCode;
+use Session; 
 
 class UserController extends Controller
 {
@@ -32,7 +33,11 @@ class UserController extends Controller
      */
     public function create()
     {
-        return view('manage.users.create')->withRoles($this->getRoles());
+        $user = new User;
+        return view('manage.users.create')->with([
+            'roles' => $this->getRoles(),
+            'user' => $user
+        ]);
     }
 
     /**
@@ -60,6 +65,7 @@ class UserController extends Controller
             $photo = $request->file('photo');
             $this->savePhoto($user, $photo);
         }
+        Session::flash('success', 'A new user successfully created');
         return redirect()->route('users.index');
     }
 
