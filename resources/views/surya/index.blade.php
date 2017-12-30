@@ -5,7 +5,7 @@
 		<div class="container mt-4">
 			<div class="row mb-3">
 				<div class="col-4">
-					<img src="{{ asset('images/surya/logo.jpg') }}" alt="surya-kusuma-logo" class="img-thumbnail">
+					<img src="{{ asset('images/surya/logo.png') }}" alt="surya-kusuma-logo" class="img-thumbnail" width="100">
 				</div>
 				<div class="col d-none d-sm-block">
 					<div class="header-contact-wrapper">

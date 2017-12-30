@@ -31,7 +31,7 @@ class ResumeMail extends Mailable
      */
     public function build()
     {
-        $attachement = public_path().'/attachment/dani_lesmiadi_cv.pdf';
+        $attachement = public_path().'/attachment/dani_lesmiadi_resume.pdf';
         return $this->subject('Dani Lesmiadi ~ Web Developer')
         ->view('mails.resume')
         ->attach($attachement, [
