@@ -1,0 +1,27 @@
+html, body {
+	font-family: "Helvetica Neue", Helvetica, Arial;
+}
+#home {
+	min-height: 100vh;
+	background-image: url("../images/surya/home.jpeg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.overlay {
+	background-color: rgba(0,0,0,.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+.header-contact-wrapper {
+	display: flex;
+	justify-content: space-around;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+}

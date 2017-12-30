@@ -34,3 +34,7 @@ Route::group(['middleware' => 'admin', 'prefix' => 'manage', 'namespace' => 'Man
 	Route::get('dashboard', 'DashboardController@index')->name('dashboard.index');
 	Route::resource('users', 'UserController')->except(['destroy']);
 });
+
+Route::group(['namespace' => 'Surya', 'prefix' => 'surya-kusuma'], function() {
+	Route::get('/', 'HomeController@index');
+});

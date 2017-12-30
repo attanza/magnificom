@@ -6,23 +6,17 @@
         <div class="card bg-dark text-center">
           <div class="card-image" style="background-image: url('../images/portfolio/npp.jpg')"></div>
           <div class="card-body">
-            <h4 class="card-title">NPP</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus soluta consectetur officia qui at quae.
-            </p>
+            <h4 class="card-title">https://negeriparapemimpi.com/</h4>
             <a href="https://www.negeriparapemimpi.com/" target="_blank" class="btn btn-primary">Visit page</a>
           </div>
         </div>
       </div>
-      <div class="col animate-right">
+      <div class="col animate-left">
         <div class="card bg-dark text-center">
-           <div class="card-image" style="background-image: url('../images/portfolio/lte.png')"></div>
+          <div class="card-image" style="background-image: url('../images/portfolio/psd.png')"></div>
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
-            <p class="card-text">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa neque itaque, laborum autem velit pariatur.
-            </p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
+            <h4 class="card-title">Push Selling System</h4>
+            <a href="http://psd.magnificom-id.com/login" target="_blank" class="btn btn-primary">Visit page</a>
           </div>
         </div>
       </div>
