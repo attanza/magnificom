@@ -17,7 +17,7 @@
     </div>
     <div class="row" style="margin-top: -40px;">
       <div class="col-md-5 text-right animate-left">
-        <h5 class="text-warning">August 2015 - March 2017 ~ PT. Surya Kusuma</h5>
+        <h5 class="text-warning">August 2015 - November 2017 ~ PT. Surya Kusuma</h5>
         <h4>Construction Field Coordinator</h4>
         <p>
           Drawing up blueprints, using Computer Aided Design (CAD) packages.
